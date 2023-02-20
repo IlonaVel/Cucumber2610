@@ -16,11 +16,16 @@ public class MainPageCucSteps1 extends BaseClass {
         List<Map<String,String>> mapList=dataTable.asMaps();
         int a = 1 + (int) ( Math.random() * mapList.size()-1 );
         Map<String,String> map=mapList.get(a);
-        Assert.assertEquals(mainPageCuc.getschool(), "школа", "result");
-        Assert.assertEquals(mainPageCuc.getcourse(), "курси", "result");
-        Assert.assertEquals(mainPageCuc.getemployments(), "працевлаштування", "result");
-        Assert.assertEquals(mainPageCuc.getblog(), "блог", "result");
-        Assert.assertEquals(mainPageCuc.getcontacts(), "контакти", "result");
+        Assert.assertEquals(mainPageCuc.getschool(), map.get("text"), map.get("result"));
+        Assert.assertEquals(mainPageCuc.getcourse(), map.get("text"), map.get("result"));
+        Assert.assertEquals(mainPageCuc.getemployments(), map.get("text"), map.get("result"));
+        Assert.assertEquals(mainPageCuc.getblog(), map.get("text"), map.get("result"));
+        Assert.assertEquals(mainPageCuc.getcontacts(), map.get("text"), map.get("result"));
+       // Assert.assertEquals(mainPageCuc.getschool(), "школа", "result");
+        //Assert.assertEquals(mainPageCuc.getcourse(), "курси", "result");
+        //Assert.assertEquals(mainPageCuc.getemployments(), "працевлаштування", "result");
+        //Assert.assertEquals(mainPageCuc.getblog(), "блог", "result");
+       // Assert.assertEquals(mainPageCuc.getcontacts(), "контакти", "result");
         Thread.sleep(2000);
 
     }
