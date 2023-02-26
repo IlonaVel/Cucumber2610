@@ -1,4 +1,4 @@
-package hillel.config;
+package hillel.Config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +18,9 @@ public class DriverConfig {
             }
         }
         return driver;
-}
+    }
+
+
 
     private static void createChromeIncognito() {
         ChromeOptions options=new ChromeOptions();

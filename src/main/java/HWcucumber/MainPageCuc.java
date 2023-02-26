@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static hillel.config.BaseClass.driver;
+import static hillel.Config.BaseClass.driver;
 
 public class MainPageCuc {
     @FindBy(xpath = "//button[contains(@class, \"site-nav-link\") and contains(text(), \"Школа\")]")

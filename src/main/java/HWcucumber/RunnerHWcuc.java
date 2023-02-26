@@ -1,5 +1,5 @@
 package HWcucumber;
-import hillel.config.BaseClass;
+import hillel.Config.BaseClass;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

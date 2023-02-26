@@ -1,10 +1,11 @@
-package hillel.config;
+package hillel.Config;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
 public class BaseClass {
-
-    public static WebDriver driver;
+    static private WebDriver driver;
 
     public static WebDriver getDriver() {
         if(driver==null){driver = DriverConfig.createDriver(Browsers.CHROMEINCOGNITO);}

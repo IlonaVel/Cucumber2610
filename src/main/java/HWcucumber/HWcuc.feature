@@ -1,13 +1,14 @@
 @ALL
 
 Feature: check 1
-  Scenario: i open hillel
-    When I open page "https://dnipro.ithillel.ua/"
-    Then check1
-      | element    | text             | result |
-      | school     | школа            | true   |
-      | courses    | курси            | true   |
-      | employment | працевлаштування | true   |
-      | blog       | блог             | true   |
-      | contacts   | контакти         | true   |
+  Scenario Outline: i open hillel
+    When I open the page "https://dnipro.ithillel.ua/"
+    Then Check "<Element>" with "<Text>"
+    Examples:
+      | element    | text             |  |
+      | school     | школа            |  |
+      | courses    | курси            |  |
+      | employment | працевлаштування |  |
+      | blog       | блог             |  |
+      | contacts   | контакти         |  |
 
